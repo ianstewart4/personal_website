@@ -212,8 +212,8 @@ h6 { font-size: 16px;}
     background-color: rgb(4, 139, 15);
 }
 
-#purple-mode{
-    background-color: rgb(148, 3, 245);
+#special-mode{
+    background-color: #264653;
 }
 
 #settings-note{
