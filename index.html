@@ -7,7 +7,8 @@
     <title>Ian Stewart</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Russo+One&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="default.css">
+    <link id="theme-style" rel="stylesheet" href="">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
                     </div>
                     <ul id="navigation">
                         <li><a href="#">Contact</a></li>
-                        <li><a href="#">Contact</a></li>
+                        
                     </ul>
                 </div>
 
@@ -38,10 +39,10 @@
                     </h5>
 
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="dark-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="dark" id="dark-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
                     <p id="settings-note">Theme options will be saved for <br> your next visit</p>
                 </div>
@@ -147,7 +148,7 @@
         </div>
     </section>
 
-    <section class="s2">
+    <!-- <section class="s2">
         <div class="main-container">
             <h5>Topics I Want To Learn and Write About</h5>
             <h6>Definitions</h6>
@@ -160,12 +161,40 @@
                         <li>experienced developers</li>
                     </ol>
                 </li>
-                <li></li>
+                <li>[tools] Figma - To design website</li>
                 <li></li>
                 <li></li>
             </ul>
         </div>
+    </section> -->
+
+    <section class="s2">
+        <div class="main-container">
+            <h3 style="text-align: center;">Get In Touch</h3>
+
+            <form id="contact-form" action="">
+                <label for="name">Name</label>
+                <input class="input-field" type="text" name="name">
+
+                <label for="subject">Subject</label>
+                <input class="input-field" type="text" name="subject">
+
+                <label for="email">Email</label>
+                <input class="input-field" type="text" name="email">
+
+                <label for="message">Message</label>
+                <textarea name="message" class="input-field"></textarea>
+
+                <input id="submit-btn" type="submit" value="Send">
+
+
+                
+            </form>
+            
+
+        </div>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
